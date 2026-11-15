@@ -1,3 +1,4 @@
+.PHONY: default
 default: fix check test
 
 .PHONY: fix

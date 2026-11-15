@@ -8,10 +8,8 @@ categories = ["algorithms", "games", "wasm"]
 
 edition.workspace = true
 license.workspace = true
+readme.workspace = true
 repository.workspace = true
-
-
-[dependencies]
 
 [lints]
 workspace = true
