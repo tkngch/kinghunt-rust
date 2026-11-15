@@ -2,7 +2,7 @@
 
 A chess puzzle solver and maker written in Rust.
 
-kinghunt works with one type of chess problems, **directmates**, where white
+kinghunt works with one type of chess problem, **directmates**, where White
 moves first and forces checkmate in a given number of moves against any defence.
 Puzzles use the standard pieces and the standard rules of chess.
 
