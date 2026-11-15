@@ -9,9 +9,9 @@ pieces and the standard rules of chess.
 ## Solver
 
 Given a position in
-[FEN](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) and a
-stipulation (for example `#2`, mate in two), the solver finds every solution and
-shows the full solution tree:
+[FEN](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) and the
+number of moves in which mate has to be delivered (_stipulation_), the solver
+finds every solution and shows the full solution tree:
 
 - the **key** move and any **threat**
 - **variations**: each Black defence and White's reply
@@ -21,7 +21,8 @@ It also reports when a puzzle is unsound:
 
 - **cooks**: more than one key
 - **no solution**
-- **duals**: more than one way for White to continue where one is expected
+
+and when it has **duals**: more than one White reply to a Black defence.
 
 ## Maker
 
