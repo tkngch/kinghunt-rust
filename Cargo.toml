@@ -1,0 +1,52 @@
+[workspace]
+members = ["crates/*"]
+resolver = "3"
+
+[workspace.package]
+edition = "2024"
+license = "GPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com/tkngch/kinghunt-rust"
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[profile.dev]
+opt-level = 1
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
+missing_debug_implementations = "warn"
+unreachable_pub = "warn"
+unused_qualifications = "warn"
+unused_lifetimes = "warn"
+trivial_casts = "warn"
+trivial_numeric_casts = "warn"
+rust_2018_idioms = { level = "warn", priority = -1 }
+
+[workspace.lints.rustdoc]
+missing_crate_level_docs = "warn"
+unescaped_backticks = "warn"
+
+[workspace.lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+
+allow_attributes = "warn"                   # use #[expect] instead of #[allow]
+allow_attributes_without_reason = "warn"    # every exception must explain itself
+unwrap_used = "warn"
+expect_used = "warn"
+panic = "warn"
+todo = "warn"
+unimplemented = "warn"
+dbg_macro = "warn"
+print_stdout = "warn"                       # a library shouldn't print
+print_stderr = "warn"
+exit = "warn"
+wildcard_enum_match_arm = "warn"            # no `_ =>` on piece or colour enums
+as_conversions = "warn"                     # use From/TryFrom for square indices
+missing_assert_message = "warn"
+shadow_unrelated = "warn"

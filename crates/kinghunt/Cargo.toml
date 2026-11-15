@@ -1,0 +1,15 @@
+[package]
+name = "kinghunt"
+version = "0.1.0"
+
+description = "Solver and maker of directmate chess problems"
+keywords = ["chess", "chess-problem", "directmate", "puzzle", "solver"]
+categories = ["algorithms", "games", "wasm"]
+
+edition.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
