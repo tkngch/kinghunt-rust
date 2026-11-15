@@ -1,3 +1,6 @@
+//! Solver and maker of directmate chess problems.
+
+/// placeholder function. to be deleted.
 #[must_use]
 pub const fn add(left: u64, right: u64) -> u64 {
     left + right
